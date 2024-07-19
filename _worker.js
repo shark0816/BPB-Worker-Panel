@@ -181,7 +181,7 @@ export default {
                             }
                         });        
 
-                    case '/newpanel/password':
+                    case '/panel/password':
 
                         let passAuth = await Authenticate(request, env);
                         if (!passAuth) return new Response('Unauthorized!', { status: 401 });           
